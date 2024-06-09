@@ -10,6 +10,9 @@ const Index = () => {
         <Link to="/kanban">
           <Button colorScheme="teal" size="lg">Go to Kanban Board</Button>
         </Link>
+        <Link to="/csv-uploader">
+          <Button colorScheme="teal" size="lg">Go to CSV Uploader</Button>
+        </Link>
       </VStack>
     </Container>
   );
