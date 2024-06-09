@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Box, Flex, Heading, VStack, Button, useDisclosure } from '@chakra-ui/react';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
-import { AddIcon } from 'react-icons/fa';
+import { FaPlus } from 'react-icons/fa';
 
 const initialColumns = {
   'column-1': {
@@ -95,7 +95,7 @@ const KanbanBoard = () => {
                     </Draggable>
                   ))}
                   {provided.placeholder}
-                  <Button leftIcon={<AddIcon />} colorScheme="teal" onClick={onOpen}>
+                  <Button leftIcon={<FaPlus />} colorScheme="teal" onClick={onOpen}>
                     Add Card
                   </Button>
                 </VStack>
